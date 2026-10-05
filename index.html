@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="hu">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Szegedi kirándulás</title>
 </head>
+
 <body>
     <h1>Szegedi kirándulás</h1>
-    <p>Sziasztok! Ezen a weboldalon megtaláltok <strong>minden</strong> szükséges információt a <em>szegedi kirándulásról</em>.</p>
-    
+    <p>Sziasztok! Ezen a weboldalon megtaláltok <strong>minden</strong> szükséges információt a <em>szegedi
+            kirándulásról</em>.</p>
+    <p>Űrlap: <a</p>
     <blockquote>
         <p>• „A boldogsághoz nem vezet út. Az út maga a boldogság.”</p>
         <footer><i>– Buddha</i></footer>
@@ -17,38 +20,75 @@
         &copy; 2026 Gulyás Nimród
     </footer>
 
-<ol>
-    <li>Utazás Szegedre</li>
-    <li>Dóm tér és Fogadalmi templom</li>
-    <li>Móra Ferenc múzeum</li>
+    <ol>
+        <li>Utazás Szegedre</li>
+        <li>Dóm tér és Fogadalmi templom</li>
+        <li>Móra Ferenc múzeum</li>
         <ul>
             <li>Állandó kiállítások</li>
             <li>Időszaki kiállítások</li>
         </ul>
-    </li>
-    <li>Ebéd a belvárosban</li>
-    <li>Hazautazás</li>
-</ol>
+        </li>
+        <li>Ebéd a belvárosban</li>
+        <li>Hazautazás</li>
+    </ol>
 
-<h2><strong>Hozzatok magatokkal:</strong></h2>
-<ul>
-    <li>Kényelmes cipő</li>
-    <li>Esőkabát</li>
-    <li>Szendvics</li>
-    <li>Innivaló</li>
-</ul>
+    <h2><strong>Hozzatok magatokkal:</strong></h2>
+    <ul>
+        <li>Kényelmes cipő</li>
+        <li>Esőkabát</li>
+        <li>Szendvics</li>
+        <li>Innivaló</li>
+    </ul>
 
-<dl>
-    <dt>Gyülekező</dt>
-    <dd>Reggel 8:00-kor lesz gyülekező az iskola előtt a kapunál. A busz ott fog várni.</dd>
-    <dt>Indulás</dt>
-    <dd>Az indulás 8:15-kor lesz. Kérlek, hozzatok magatokkal mindent amit beszéltünk.</dd>
-    <dt>Kíérő tanár</dt>
-    <dd>Ujhegyi Micsi, <a href="mailto:ujhegyi.micsi@iskola.hu">ujhegyi.micsi@iskola.hu</a></dd>
-</dl>
+    <dl>
+        <dt>Gyülekező</dt>
+        <dd>Reggel 8:00-kor lesz gyülekező az iskola előtt a kapunál. A busz ott fog várni.</dd>
+        <dt>Indulás</dt>
+        <dd>Az indulás 8:15-kor lesz. Kérlek, hozzatok magatokkal mindent amit beszéltünk.</dd>
+        <dt>Kíérő tanár</dt>
+        <dd>Ujhegyi Micsi, <a href="mailto:ujhegyi.micsi@iskola.hu">ujhegyi.micsi@iskola.hu</a></dd>
+    </dl>
 
-<form action=""></form>
+    <p>Ismertető Szeged városáról:<a href="https://hu.wikipedia.org/wiki/Szeged" target="_blank"> Szeged városa</a></p>
 
+    <img src="szeged.png" alt="Szeged város látképe, a Dóm tér és a Fogadalmi templom látható a képen." width="600">
+
+    <table>
+        <tr>
+            <th>Tétel</th>
+            <th>Ár</th>
+        </tr>
+        <tr>
+            <td>Utazás</td>
+            <td>2500 Ft</td>
+        </tr>
+        <tr>
+            <td>Belépő</td>
+            <td>1800 Ft</td>
+        </tr>
+        <tr>
+            <td>Ebéd</td>
+            <td>2200 Ft</td>
+        </tr>
+        <tr>
+            <td>Összesen: 6500 Ft</td>
+        </tr>
+
+    </table>
+
+    <form action="https://httpbin.org/post" method="post">
+        <label for="name" required>Név:</label>
+        <input type="text" id="name" name="name" placeholder="Pl. Gulyás Nimród" required><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="Pl. gulyas.nimrod@iskola.hu" name="email"><br><br>
+        <label  for="telephone">Telefonszám:</label>
+        <input type="tel" id="telephone" placeholder="Pl. +36 30 123 4567" name="telephone" minlength="12" maxlength="15"><br><br>
+        <label for="hany-fo" id="hany-fo">Hány fővel jössz?</label>
+        <input type="number" id="hany-fo" name="hany-fo" min="1" max="4"><br><br>
+        <input type="submit" value="Küldés">
+    </form>
 
 </body>
+
 </html>
